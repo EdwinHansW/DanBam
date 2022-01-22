@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/home.css">
+
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script defer src="../Javascript/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../assets/logo1.png" alt=""></a>
+        </div>
+
+        <div class="nav-menu" id="Nav-menu">
+            <i class="fas fa-bars icon"></i>
+            <ul class="inactive" id="myNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="dropdown"><a href="menu.html">Menu<i class="fa fa-caret-down"></i></a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="menu.html#food">Food</a></li>
+                            <li><a href="menu.html#drink">Drink</a></li>
+                            <li><a href="menu.html#dessert">Dessert</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="git">
+        <div class="titlegit">
+            GET IN TOUCH
+        </div>
+            <div class="gitContList">
+
+                <div class="gitContent">
+                    <div class="gitImg">
+                        <img src="../assets/Address Logo.png" alt="">
+                    </div>
+                    <div>
+                    <h1>ADDRESS</h1><br>
+                    <p> <b>DanBam Lippo Karawaci</b>  <br> <br>
+                        Jl. Boulevard Diponegoro No.105, Klp. Dua, Kec. Klp. Dua, Tangerang, Banten 15810 <br> <br> 
+                        
+                        <b>DanBam Gading Serpong</b>  <br> <br>
+                        Jl. Gading Serpong Boulevard, Pakulonan Bar., Kec. Klp. Dua, Tangerang, Banten 15810<br> <br>
+                        
+                        <b>DanBam Grand Indonesia</b>
+                        <br> <br>
+                        Jl. M.H. Thamrin No.1, Kb. Melati, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310</p>
+                    </div>
+                </div>
+
+                <div class="gitContent">
+                    <div class="gitImg">
+                        <img src="../assets/Phone Logo.png" alt="">
+                    </div>
+                    <h1>PHONE</h1><br>
+                    <p> <b>DanBam Lippo Karawaci</b><br><br>
+                        +62 895 3312 2892<br><br><br><br>
+                        <b>DanBam Gading Serpong</b> <br><br>
+                        +62 895 1178 7092<br><br><br><br>
+                        <b>DanBam Grand Indonesia</b><br><br>
+                        +62 895 9092 6641</p><br><br>
+                </div>
+
+                <div class="gitContent">
+                    <div class="gitImg">
+                        <img src="../assets/Email.png" alt="">
+                    </div>
+                    <h1>EMAIL</h1><br>
+                    <p><b>DanBam Lippo Karawaci</b><br><br>
+                        danbamlippo@danbam.com<br><br><br><br>
+                        <b>DanBam Gading Serpong</b> <br><br>
+                        danbamgading@danbam.com<br><br><br><br>
+                        <b>DanBam Grand Indonesia</b><br><br>
+                        danbamgrand@danbam.com</p><br><br></p>
+                </div>
+            </div>
+    </div>
+        
+
+    <div class="gitContact">
+        <div class="formMsg">
+            <h2>MESSAGE US</h2>
+            <p>Got any question, comments, and suggestion to DanBam Korean Restaurant? We’d love to hear from you. Send us a message by filling the form and we’ll be in touch as soon as possible.</p> <br>
+            <div class="sosmed">
+              <a href="https://www.instagram.com/">  <img class="about-logo" src="../assets/NEW IG.png" alt=""></a>
+                <span>@DanBam.Korea</span><br><br>
+               <a href="https://www.facebook.com/"><img class="about-logo" src="../assets/FB 2.png" alt=""> <span>DanBam Korean Resto</span><br><br>
+               </a>                 
+               <a href="https://twitter.com/?lang=en"><img class="about-logo" src="../assets/Twitter NEW.png" alt=""> <span>@DanBam Resto</span>
+               </a>  
+            </div>
+                    
+        </div>
+        <div class="gitForm">
+            <form id="form" action="">
+                <div class="input-label">
+                    <label for="name"> <b>Name</b> </label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>
+                    <span id="errorName"></span>
+                </div>
+                <br>
+                <div class="input-label">
+                    <label for="email"> <b>Email</b>  </label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+                <br>
+                <div class="input-label">
+                    <label for="gender"> <b>Gender</b></label>
+                    <div>
+                        <input type="radio" name="gender" value="Man" id="man"><label for="man" >Man</label>
+                        <input type="radio" name="gender" value="Woman" id="woman"><label for="woman">Woman</label>
+                        <br>
+                        <span id="errorGender"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="input-label">
+                    <label for="Branch"> <b>Branch</b></label>
+                    <div>
+                        <input type="radio" name="Branch" id = "lippo" value="Lippo Karawaci"><label for="Lippo Karawaci" >Lippo Karawaci</label><br>
+                        <input type="radio" name="Branch" id = "gading" value="Gading Serpong"><label for="Gading Serpong" >Gading Serpong</label><br>
+                        <input type="radio" name="Branch" id = "grand" value="Grand Indonesia"><label for="Grand Indonesia" >Grand Indonesia</label>
+                        <br>
+                        <span id="errorBranch"></span>
+                    </div>
+                </div>
+                <br>
+
+                <div class="input-label">
+                    <label for="message"> <b>Message</b> </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please state your question/ comment/ suggestion in this box." required></textarea>
+                    <span id="errorMessage"></span>
+                </div>
+
+                <div class="input-label">
+                    <label for="agree">
+                        <input type="checkbox" name="agree" value="agree" id="terms"required="required">
+                        I Agree To All Terms & Conditions
+                    </label>
+                    <span id ="errorTerms"></span>
+                </div>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Copyright © 2021 DanBam| All Right Reserved| Powered by Jeta N M H, Edwin H W, Michael B
+</footer>
+</body>
+
+</html>

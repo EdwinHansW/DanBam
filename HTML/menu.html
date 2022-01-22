@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script defer src="../Javascript/index.js"></script>
+</head>
+
+<body>
+    <!-- ini navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../assets/logo1.png" alt=""></a>
+        </div>
+
+        <div class="nav-menu" id="Nav-menu">
+            <i class="fas fa-bars icon"></i>
+            <ul class="inactive" id="myNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li class="dropdown"><a href="menu.html">Menu<i class="fa fa-caret-down"></i></a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="menu.html#food">Food</a></li>
+                            <li><a href="menu.html#drink">Drink</a></li>
+                            <li><a href="menu.html#dessert">Dessert</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="all">
+        <div class="promoBanner">
+            <div class="slider">
+                <img src="../assets/promo 1.jpg" alt="">
+            </div>
+            <div class="slider">
+                <img src="../assets/promo 2.jpg" alt="">
+            </div>
+            <div class="slider">
+                <img src="../assets/promo 3.png" alt="">
+            </div>
+            <!-- arrow -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="food" id="food">
+            <h1>FOOD</h1>
+            <div class="menuFood">
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/bulgogi.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>DDUK-BULGOGI <br>
+                                뚝 불고기
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Bulgogi served in a hot stone bowl </p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 38k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/bibimbap.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>YUKHOE BIBIMBAP <br>
+                                육회 비빔밥
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Bibimbap with raw beef served in a hot stone bowl</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 38k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="viewButton" class="viewMore" onclick="ViewMore()">View More</button>
+            <div id="viewHide" class="menuFood">
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/bibimbap.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>DOLSOT BIBIMBAP <br>
+                                돌솥 비빔밥
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Bibimbap served in a hot stone bowl (No meat)</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 50k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/ram.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>SOGOGI RAMYUN <br>
+                                소고기라면
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Korean Spicy Instant Noodle With Beef</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 45k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/gopchang1.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>Gop-Chang <br>
+                                곱창
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Grilled beef small intestines</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 48k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/kangpoong.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>Kang-Poong Sae-Woo <br>
+                                깐풍새우
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Spicy & Sweet Shrimp</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 52k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/ojinguh.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>O-Jing-Uh <br>
+                                오징어
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Fresh squids with spicy gochujang along with gochugaru</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 55k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/kimchi.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>KIMCHI-JJIGAE <br>
+                                김치찌개
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Spicy stew made with ripened Kimchi, pork and bean-curd</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 50k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/japchae.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>JAPCHAE <br>
+                                잡채
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Stir-fried starch noodles with beef and vegetables</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 38k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/jigae.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>SUNDUBU-JJIGAE <br>
+                                순두부찌개
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Spicy soft bean-curd stew with clams and egg-yolk</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 55k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="viewLess" class="viewLess" onclick="viewLess()">View Less</button>
+        </div>
+
+        <div class="food" id="drink">
+            <h1>Drink</h1>
+            <div class="menuFood">
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/soju.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>SOJU <br>
+                                소주
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Alcoholic drink from Korea</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 60k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/greentea.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>ICED GREEN TEA LATTE<br>
+                                아이스 그린 티 라떼
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Creamy Green Tea Latte with ice</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 12k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/water.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>MINERAL WATER<br>
+                                광천수
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Fresh mineral water</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 8k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/tea.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>ICED LEMON TEA<br>
+                                아이스 레몬 티
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Fresh Lemon Tea with ice</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 12k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="food" id="dessert">
+            <h1>DESSERT</h1>
+            <div class="menuFood">
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/dasik.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>DASIK<br>
+                                다식
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Traditional Korean tea cookies</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 30k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/yakgwa.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>YAKGWA<br>
+                                약과
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Korean confection made with honey</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 37k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/songpyeon.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>SONGPYEON<br>
+                                송편
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Traditional Korean rice cakes</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 28k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" listFood">
+                    <div class="foodImg">
+                        <img class="image-border2" src="../assets/bingsu.png" alt="">
+                    </div>
+                    <div class="foodText">
+                        <div class="foodTitle">
+                            <h2>BINGSU<br>
+                                빙수
+                            </h2>
+                        </div>
+                        <div class="foodDesc">
+                            <p>Sweet shaved ice with fruits</p>
+                        </div>
+                        <div class="foodPrice">
+                            <p>IDR 32k <br>
+                                <a href="https://www.gojek.com/id-id/">
+                                    <button class="foodOrder">Order</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Copyright © 2021 DanBam| All Right Reserved| Powered by Jeta N M H, Edwin H W, Michael B
+        </footer>
+    </div>
+</body>
+
+</html>
