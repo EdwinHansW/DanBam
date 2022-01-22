@@ -1,0 +1,34 @@
+.mapMain{
+    box-shadow: 0px 0px 20px #82f0ff;
+    padding: 20px 15px;
+    width: 100%;
+}
+.map-text{
+    padding: 30px 5px;
+}
+.mapImage{
+    padding: 20px;
+    width: 100%;
+}
+
+.mapImage img{
+    width: 100%;
+}
+
+.mapImage:hover{
+    transform: scale(1.05);
+    transition: ease-in 0.2s;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 1025px){
+    .resp{
+        display: none;
+    }
+    .hide{
+        display: flex;
+    }
+}

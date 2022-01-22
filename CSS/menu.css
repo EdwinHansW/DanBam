@@ -1,0 +1,186 @@
+.slider{
+    display: none;
+}
+.promoBanner{
+    width: 100%;
+    padding: 120px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.slider img{
+    width: 100%;
+    height: auto;
+}
+/* arrow */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 70px;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 70px;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* food */
+.food h1{
+    text-align: center;
+    font-size: 48px;
+}
+.food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.menuFood{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.listFood{
+    display: flex;
+    flex-direction: row;
+    width:40%;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px #ff7ee9;
+    background-color: rgb(29 29 29 / 56%);
+}
+
+.foodImg, .foodText{
+    width: 50%;
+}
+
+.foodImg img{
+    width: 100%;
+}
+
+.foodText{
+    padding-left: 10px;
+}
+.foodDesc{
+    padding-top: 20px;
+}
+
+.foodDesc p{
+    font-size: 20px;
+}
+.foodPrice{
+    padding-top: 50px;
+}
+.foodOrder{
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 5px;
+}
+
+.foodOrder:hover{
+    background-color:lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+.viewMore{
+    padding: 15px;
+    width: fit-content;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.viewMore:hover{
+    background-color:lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+.viewLess{
+    padding: 15px;
+    width: fit-content;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: none;
+}
+
+.viewLess:hover{
+    background-color:lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+#viewHide{
+    display: none;
+}
+
+@media only screen and (max-width: 769px){
+    .prev, .next{
+        top: 20%;
+    }
+    .prev{
+        left: 20px;
+    }
+    .next{
+        right: 20px;
+    }
+    .promoBanner{
+        padding: 75px;
+    }
+    .food{
+        padding-top: 0px;
+    }
+
+    .listFood{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:426px){
+    .listFood{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+    .foodImg{
+        width: 100%;
+    }
+    .foodText{
+        width: 100%;
+    }
+    .prev, .next{
+        top: 13%;
+    }
+}

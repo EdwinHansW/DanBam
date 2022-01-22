@@ -1,0 +1,157 @@
+.git{
+    padding-top: 80px;
+    background-color: black;
+    box-shadow: 0px 0px 50px #82f0ff;
+}
+
+.titlegit{
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px 70px 50px;
+    text-shadow: 0px 0px 50px #ff7ee9;
+}
+.gitContList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gitContent{
+    width:20%;
+    margin: 50px;;
+    height: 85vh;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px #ff7ee9;
+    background-color: rgb(29 29 29 / 56%);
+    text-align: center;
+}
+
+.gitContent:hover{
+    box-shadow: 0px 0px 25px #82f0ff;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+}
+
+.gitImg{
+    width: 100%;
+    height: auto;
+}
+.gitImg img{
+    width: 60%;
+    padding: 20px;
+    object-fit: contain;
+}
+
+.gitContact{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+    box-shadow: 0px 0px 50px #82f0ff;
+}
+.formMsg{
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    padding-top: 50px;
+}
+.formMsg h2{
+    font-size: 48px;
+}
+.formMsg p{
+    font-size: 20px;
+    
+}
+.gitForm{
+    width: 59%;
+    padding: 50px;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.input-label label{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.input-label input,
+.input-label textarea {
+    padding: 10px;
+}
+.input-label textarea {
+    color: black;
+}
+input[type=submit] {
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+input{
+    color: black;
+}
+.sosmed{
+    display: inline-block;
+}
+
+.sosmed span{
+    padding: 10px;
+    font-size: 20px;
+}
+.sosmed a{
+    text-decoration: none;
+}
+#errorName, #errorMessage, #errorGender, #errorBranch{
+    color: red;
+}
+
+@media only screen and (max-width: 1025px){
+    .gitContent{
+        padding: 0px;
+        height: 680px;
+        width:25%;
+        margin: 40px;
+    }
+    .gitContent p{
+        padding: 10px;
+    }
+    .gitImg{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 769px){
+    .gitContent{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:426px){
+    .gitContent{
+        width: 75%;
+    }
+    .formMsg{
+        width: 75%;
+    }
+    .gitForm{
+        width: 100%;
+    }
+    .gitContact{
+        flex-direction: column;
+    }
+    .gitForm{
+        border-top: 1px solid white;
+    }
+}
